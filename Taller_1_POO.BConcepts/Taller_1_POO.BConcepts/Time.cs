@@ -133,7 +133,7 @@ public class Time
         int _Hour = Hour % 12;
         if (_Hour == 0)
         {
-            _Hour = 12;
+            _Hour = 0;
         }
 
         string tt = (Hour >= 12) ? "PM" : "AM";
@@ -176,9 +176,5 @@ public class Time
         }
         return millisecond;
     }
-
-
-
-
 
 }
